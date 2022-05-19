@@ -132,7 +132,7 @@ congruify.phylo=function(reference, target, taxonomy=NULL, tol=0, scale=c(NA, "P
 	classification=taxonomy
 	unfurl=FALSE
 
-	if(is.phylo(stock)) {
+	if(inherits(stock,"phylo")) {
 		stock=list(stock)
 		unfurl=TRUE
 	}
